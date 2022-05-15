@@ -25,6 +25,8 @@ all: compiler
 compiler:
 	$(CC) $(OPT) $(VERSION) $(HEADERS) $(FLAGS) $(WARNINGS) $(REMOVE_WARN) $(LIBS) $(INPUT)
 	$(JAR) $(JAR_OPT) $(OUTPUT) $(CLASSFILES)
+	$(RM) -rf $(EXPORT)
+	mkdir $(EXPORT)
 	cp $(OUTPUT) $(EXPORT)/
 	$(RM) $(OUTPUT)
 	$(RM) $(CLASSFILES)

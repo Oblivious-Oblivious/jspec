@@ -1,5 +1,9 @@
 #!/bin/sh
 
+cd prime_factors
+./compile
+cd ..
+
 cd simple
 ./compile
 cd ..

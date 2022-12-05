@@ -3,7 +3,7 @@ NAME = jspec
 JAVA = java
 CC = $(JAVA)c
 OPT =
-VERSION =
+VERSION = --release 11
 
 JAR = jar
 JAR_OPT = -cvf

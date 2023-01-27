@@ -91,6 +91,13 @@ class cDataLib extends SpecModule {
                 assert_that(false).is_true();
             });
 
+            it("succeeds assert_false", () -> {
+                assert_that(false).is_false();
+            });
+            it("fails assert_false", () -> {
+                assert_that(true).is_false();
+            });
+
             it("just fails", () -> {
                 fail("This is the fail message");
             });

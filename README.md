@@ -1,2 +1,2 @@
 # jspec
- BDD in Java, inspired from Rspec
+ BDD in Java, inspired by Rspec
